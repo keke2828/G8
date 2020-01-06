@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 279, y: 194}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 284
+  controlID: 188
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 129
+  controlID: 33
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 232
+  controlID: 113
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_MinSize: {x: 819, y: 494}
   m_MaxSize: {x: 22014, y: 14044}
   vertical: 0
-  controlID: 171
+  controlID: 112
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 350
     height: 326
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: ec290000
       m_LastClickedID: 0
       m_ExpandedIDs: 4afbffff
       m_RenameOverlay:
@@ -701,19 +701,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/scripts
   m_ViewMode: 1
   m_StartGridSize: 85
   m_LastFolders:
-  - Assets
+  - Assets/scripts
   m_LastFoldersGridSize: 85
-  m_LastProjectPath: C:\unity\unity work\g8GAME\g8 game(no)
+  m_LastProjectPath: C:\unity\unity work\g8GAME\G8\g8 game(no)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 962d0000
-    m_LastClickedID: 11670
+    scrollPos: {x: 0, y: 396}
+    m_SelectedIDs: ce2f0000
+    m_LastClickedID: 12238
     m_ExpandedIDs: 00000000962d0000fc2d0000202e00002a2e00005e2e0000202f0000302f00005c2f0000a42f0000f62f0000fe2f000048300000a4300000bc30000008310000403100007e310000dc3100001c3200002a3200004232000072320000d2320000d6320000203300006233000080330000843300009c330000e6330000063400002034000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.13930629, y: 0.63823175, z: -0.11893162, w: 0.7478021}
     speed: 2
-    m_Value: {x: 0.13930629, y: 0.63823175, z: -0.11893162, w: 0.7478021}
+    m_Value: {x: 0.13929942, y: 0.6382003, z: -0.11892575, w: 0.7477652}
   m_Size:
     m_Target: 13.196581
     speed: 2
