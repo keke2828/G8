@@ -27,11 +27,26 @@ public class chicken : MonoBehaviour
     [Header("檢物品位置")]
     public Rigidbody rigCatch;
 
+    bool g8;
+    bool is_catch = false;
+    bool thedebug = false;
+
+    HingeJoint hin;
+
     private void Update()
     {
         Turn();
         Run();
         Catch();
+
+        g8 = Input.GetKey(KeyCode.Space);
+
+        if (is_catch && Input.GetKeyDown(KeyCode.Space))
+        {
+            hin.connectedBody = null;
+            is_catch = false;
+            thedebug = true;
+        }
     }
     //觸發碰撞時持續執行(一秒執行約60次)碰撞物件資訊
     private void OnTriggerStay(Collider other)
@@ -39,17 +54,28 @@ public class chicken : MonoBehaviour
         print(other.name);
 
         //如果 碰撞物件的名稱 為 漢堡
-        if (other.name == "漢堡")
+        if (other.name == "漢堡" && g8 && !thedebug) 
         {
             Physics.IgnoreCollision(other, GetComponent<Collider>());
             //碰撞物件.取得元件<泛型>().連接身體 = 檢物品位置
             other.GetComponent<HingeJoint>().connectedBody = rigCatch;
+            hin = other.GetComponent<HingeJoint>();
+
+            is_catch = true;
         }
 
         if (other.name == "沙子")
         {
            
             GameObject.Find("漢堡").GetComponent<HingeJoint>().connectedBody = null;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.name == "漢堡")
+        {
+            thedebug = false;
         }
     }
 
@@ -99,7 +125,7 @@ public class chicken : MonoBehaviour
         }
        
     }
-
+    
         ///<summary>
         ///檢視任務
         ///</summary>
